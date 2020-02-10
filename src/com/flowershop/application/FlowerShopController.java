@@ -7,7 +7,6 @@ import com.flowershop.persistence.ItemRepository;
 
 public class FlowerShopController {
 	
-	private String Name;
 	private ItemRepository repository = new ItemRepository();
 	private int treeCounter;
 	private int flowerCounter;
@@ -64,8 +63,7 @@ public class FlowerShopController {
 		
 		String results="";
 		
-		//add trees
-		
+		//add trees		
 		if (stockTrees > 0) {
 			results += "TREES:\n";
 			for (int i = 0; i < repository.getItems().size(); i++) {
@@ -77,8 +75,8 @@ public class FlowerShopController {
 				}
 			}
 		}
-	//add flowers
-		
+	
+		//add flowers
 		if (stockFlowers > 0) {
 			results += "FLOWERS:\n";
 			for (int i = 0; i < repository.getItems().size(); i++) {
@@ -90,8 +88,8 @@ public class FlowerShopController {
 				}
 			}
 		}
-	//add trees
-		
+	
+		//add trees
 		if (stockDecoration > 0) {
 			results += "DECORATION:\n";
 			for (int i = 0; i < repository.getItems().size(); i++) {
@@ -103,8 +101,6 @@ public class FlowerShopController {
 				}
 			}
 		}
-		
-		
 		
 		return results;
 		
