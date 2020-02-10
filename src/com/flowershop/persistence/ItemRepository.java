@@ -16,7 +16,7 @@ public class ItemRepository {
 	}
 
 	//getter
-	public static List<Item> getItems() {
+	public List<Item> getItems() {
 		
 		return new ArrayList<>(items);
 		

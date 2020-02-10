@@ -13,7 +13,11 @@ public class Main {
 		controller.createFlower(5, "azul");
 		controller.createTree(4, 50);
 		
-		String allItems = controller.getAllItems();
+		int stockTrees = controller.getTreeCounter();
+		int stockFlowers  = controller.getFlowerCounter();
+		int stockDecoration  = controller.getDecorationCounter();
+		
+		String allItems = controller.getAllItems(stockTrees, stockFlowers,stockDecoration);
 		
 		System.out.println(allItems);
 		

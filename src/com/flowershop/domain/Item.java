@@ -4,6 +4,9 @@ public abstract class Item {
 	
 	protected int id;
 	protected int price;
+	protected boolean isATree;
+	protected boolean isAFlower;
+	protected boolean isADecoration;
 	
 	private static int COUNTER = 1;
 	
@@ -47,6 +50,23 @@ public abstract class Item {
 	public void setPrice(int price) {
 		this.price = price;
 	}
+
+
+	public boolean isATree() {
+		return isATree;
+	}
+
+
+	public boolean isAFlower() {
+		return isAFlower;
+	}
+
+
+	public boolean isADecoration() {
+		return isADecoration;
+	}
+	
+	
 	
 
 }

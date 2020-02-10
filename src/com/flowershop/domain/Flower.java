@@ -8,7 +8,7 @@ public class Flower extends Item {
 
 		super(price);
 		this.color = color;
-
+		super.isAFlower = true;
 	}
 
 	/**
@@ -24,10 +24,11 @@ public class Flower extends Item {
 	public void setColor(String color) {
 		this.color = color;
 	}
+	
 
 	@Override
 	public String toString() {
-		return "Flower [id= " + getId() + ", color=" + getColor() + ", price=" + getPrice() + "]\n";
+		return "[id= " + getId() + ", color=" + getColor() + ", price=" + getPrice() + "]\n";
 	}
 
 }

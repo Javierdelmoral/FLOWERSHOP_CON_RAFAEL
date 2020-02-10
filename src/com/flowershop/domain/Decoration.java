@@ -21,7 +21,7 @@ public class Decoration extends Item {
 
 			break;
 		}
-
+		super.isADecoration = true;
 	}
 
 	/**
@@ -38,9 +38,11 @@ public class Decoration extends Item {
 		this.decorationType = decorationType;
 	}
 
+	
+
 	@Override
 	public String toString() {
-		return "Decoration [id= " + id + ", decorationType= " + decorationType + ", price=" + price + "]\n";
+		return "[id= " + id + ", decorationType=" + decorationType + ", price=" + price + "]\n";
 	}
 	
 	

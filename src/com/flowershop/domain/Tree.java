@@ -3,12 +3,12 @@ package com.flowershop.domain;
 public class Tree extends Item {
 
 	protected int height;
-
+	
 	public Tree(int price, int height) {
 
 		super(price);
 		this.height = height;
-
+		super.isATree = true;
 	}
 
 	/**
@@ -25,9 +25,15 @@ public class Tree extends Item {
 		this.height = height;
 	}
 
+	
+	
+	public boolean isATree() {
+		return isATree;
+	}
+
 	@Override
 	public String toString() {
-		return "Tree [id= " + getId() + ", height=" + getHeight() + ", price=" + getPrice() + "]\n";
+		return "[id= " + getId() + ", height=" + getHeight() + ", price=" + getPrice() + "]\n";
 	}
 
 }
