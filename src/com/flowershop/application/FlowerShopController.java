@@ -59,12 +59,12 @@ public class FlowerShopController {
 	}
 	
 	//get repository info method
-	public String getAllItems(int stockTrees, int stockFlowers, int stockDecoration) {
+	public String getAllItems() {
 		
 		String results="";
 		
 		//add trees		
-		if (stockTrees > 0) {
+		if (getTreeCounter() > 0) {
 			results += "TREES:\n";
 			for (int i = 0; i < repository.getItems().size(); i++) {
 				
@@ -77,7 +77,7 @@ public class FlowerShopController {
 		}
 	
 		//add flowers
-		if (stockFlowers > 0) {
+		if (getFlowerCounter() > 0) {
 			results += "FLOWERS:\n";
 			for (int i = 0; i < repository.getItems().size(); i++) {
 				
@@ -90,7 +90,7 @@ public class FlowerShopController {
 		}
 	
 		//add trees
-		if (stockDecoration > 0) {
+		if (getDecorationCounter() > 0) {
 			results += "DECORATION:\n";
 			for (int i = 0; i < repository.getItems().size(); i++) {
 				
