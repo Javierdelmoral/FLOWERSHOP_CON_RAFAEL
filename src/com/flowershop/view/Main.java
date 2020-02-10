@@ -16,7 +16,7 @@ public class Main {
 		String allItems = controller.getAllItems();
 		
 		System.out.println(allItems);
-		//klklkjjj
+		
 		
 
 	}
