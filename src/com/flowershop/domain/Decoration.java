@@ -4,11 +4,11 @@ public class Decoration extends Item {
 
 	DecorationType decorationType;
 
-	public Decoration(int price, String decorationType) {
+	public Decoration(int price, DecorationType decorationType) {
 
 		super(price);
 
-		switch (decorationType) {
+		switch (decorationType.toString()) {
 		case "WOOD":
 
 			this.decorationType = DecorationType.WOOD;

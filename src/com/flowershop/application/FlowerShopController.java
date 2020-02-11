@@ -1,6 +1,7 @@
 package com.flowershop.application;
 
 import com.flowershop.domain.Decoration;
+import com.flowershop.domain.DecorationType;
 import com.flowershop.domain.Flower;
 import com.flowershop.domain.Tree;
 import com.flowershop.persistence.ItemRepository;
@@ -51,7 +52,7 @@ public class FlowerShopController {
 		flowerCounter++;
 	}
 	
-	public void createDecoration(int price, String decorationType) throws Exception{
+	public void createDecoration(int price, DecorationType decorationType) throws Exception{
 		
 		Decoration decoration = new Decoration (price, decorationType);
 		repository.addItem(decoration);
